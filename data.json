@@ -1,0 +1,12 @@
+[
+  {
+    "name": "test1",
+    "url": "https://naver.com",
+    "tel" : "01000009999"
+  },
+  {
+    "name": "test2",
+    "url": "https://naver.com",
+    "tel" : "01000009999"
+  }
+]
