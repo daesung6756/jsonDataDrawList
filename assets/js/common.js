@@ -3,8 +3,8 @@
 const defaultThSet = {
     col : [
         {"key":"name", title:"이름", row:"center", add:"name"},
-        {"key":"url", title:"경로", row:"center", add:"url"},
         {"key":"tel", title:"전화번호", row:"center", add:"tel"},
+        {"key":"url", title:"경로", row:"center", add:"url"},
         {"key":"mail", title:"메일주소", row:"center", add:"mail"}
     ]
 }

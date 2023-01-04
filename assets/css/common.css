@@ -15,7 +15,7 @@ body {font-size:1rem;}
 .is-hide {display:none;}
 
 /* select */
-.select-box {position:relative;border:1px solid #dcdfe6;display:inline-block;vertical-align: top;font-size:.6rem;line-height:16px;text-align: left;}
+.select-box {position:relative;border:1px solid #dcdfe6;display:inline-block;vertical-align: top;font-size:.8rem;line-height:16px;text-align: left;}
 .select-box::after {content:"";position:absolute;top:50%;right:10px;transform:translateY(-50%) rotate(0);width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 8px solid black;transition: transform .2s}
 .select-box .view {display:inline-block;width:100%;cursor:pointer;padding:11px 40px 11px 10px;min-width:100px;}
 .select-box .drop-down {position:absolute;top:110%;left:0;width:100%;z-index:-1;opacity:0;transition: opacity .3s;border:1px solid #333;}
@@ -24,14 +24,14 @@ body {font-size:1rem;}
 .select-box .drop-down .option {display:block;cursor:pointer;background:#fff;padding:5px 5px 5px 10px;}
 .select-box .drop-down .option:hover {background:#ddd}
 
-.checkbox {position:relative;display:inline-block;vertical-align:top;text-align:left;line-height:1.2rem;font-size:.7rem;}
+.checkbox {position:relative;display:inline-block;vertical-align:top;text-align:left;line-height:1.2rem;font-size:.8rem;}
 .checkbox label {position:relative;text-align:left;padding-left:25px;cursor:pointer}
 .checkbox label::before {content:"";position:absolute;top:50%;left:0;width:20px;height:20px;transform: translateY(-50%);background-image:url("../../assets/images/icons/icon-checkbox-none-check.png");background-position:center center;background-size:contain}
 .checkbox.is-checked label::before {background-image:url("../../assets/images/icons/icon-checkbox-is-checked.png");}
 .checkbox input {position:absolute;top:0;left:0;width:1px;height:1px;}
 
 /* input-style */
-.input-style {border:1px solid #dcdfe6;padding:11px 10px 11px;line-height:16px;}
+.input-style {border:1px solid #dcdfe6;padding:11px 10px 11px;line-height:16px;font-size:.7rem}
 
 /* font color */
 .fc-blue{color:#4eadff !important;}
@@ -146,7 +146,7 @@ body {font-size:1rem;}
 
 /* table set */
 .table-wrap {overflow:hidden;overflow-x:auto;}
-.table-col {font-size:.7rem;table-layout: fixed;width:100%;}
+.table-col {font-size:.9rem;table-layout:fixed;width:100%;}
 .table-col thead th {text-align:center;padding:14px 10px;border-top:1px solid #555;border-bottom:1px solid #555;}
 .table-col tbody td {padding:10px 5px;text-align:center;border-bottom:1px solid #ddd;vertical-align: middle}
 
@@ -155,20 +155,14 @@ body {font-size:1rem;}
 
 }
 @media screen and (max-width:1023px){
-
+    html {font-size:18px;}
 }
 @media screen and (max-width:767px){
-
-}
-@media screen and (max-width:767px){
-
+    html {font-size:16px;}
 }
 @media screen and (max-width:480px){
     .table-col tbody td {word-break: break-all}
-
     .select-box .view {min-width:60px;padding:11px 20px 11px 5px}
-
-
 }
 @media screen and (max-width:360px){
 

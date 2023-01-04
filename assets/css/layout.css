@@ -6,36 +6,33 @@
     width:100%;
     max-width:1200px;
     margin:0 auto;
+    padding:1rem;
 }
-
+.header {background: #0f4b80}
+.header h1 {color:#fff;}
+.footer {background:#efefef;color:#333;}
+.container .content {padding:2.5rem 1rem}
+.footer .inner {padding:2.5rem 1rem}
 
 /* checkbox */
 .checkbox + .checkbox {margin-left:10px;}
-[data-checkbox-group="listHideCheckbox"] {position:relative;padding-left:50px;}
-.field-set[data-checkbox-group="listHideCheckbox"]::before {content:"감추기 : ";position:absolute;top:50%;left:0;transform: translateY(-50%);font-size:.6rem}
+.field-set[data-checkbox-group="listHideCheckbox"] {position:relative;padding-left:65px;}
+.field-set[data-checkbox-group="listHideCheckbox"]::before {content:"감추기 : ";position:absolute;top:50%;left:0;transform: translateY(-50%);font-size:.8rem}
 
 @media screen and (max-width:1200px){
-    .header .inner,
-    .container .content,
-    .footer .inner {
-        padding:0 20px
-    }
-    .header .inner {padding: 20px 20px}
-    .header .inner h1 {font-size:.8rem}
 
 }
 @media screen and (max-width:1023px){
 
 }
 @media screen and (max-width:767px){
-
+    .field-set[data-checkbox-group="listHideCheckbox"] {padding-left:55px}
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:480px) {
 
 }
 @media screen and (max-width:360px){
 
 }
-
 @media  (hover: hover) {
 }
