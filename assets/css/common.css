@@ -26,8 +26,8 @@ body {font-size:1rem;}
 
 .checkbox {position:relative;display:inline-block;vertical-align:top;text-align:left;line-height:1.2rem;font-size:.7rem;}
 .checkbox label {position:relative;text-align:left;padding-left:25px;cursor:pointer}
-.checkbox label::before {content:"";position:absolute;top:50%;left:0;width:20px;height:20px;transform: translateY(-50%);background-image:url("../assets/images/icons/icon-checkbox-none-check.png");background-position:center center;background-size:contain}
-.checkbox.is-checked label::before {background-image:url("../assets/images/icons/icon-checkbox-is-checked.png");}
+.checkbox label::before {content:"";position:absolute;top:50%;left:0;width:20px;height:20px;transform: translateY(-50%);background-image:url("../../assets/images/icons/icon-checkbox-none-check.png");background-position:center center;background-size:contain}
+.checkbox.is-checked label::before {background-image:url("../../assets/images/icons/icon-checkbox-is-checked.png");}
 .checkbox input {position:absolute;top:0;left:0;width:1px;height:1px;}
 
 /* input-style */
