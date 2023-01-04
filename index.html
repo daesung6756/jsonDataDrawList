@@ -9,48 +9,50 @@
     <link rel="stylesheet" href="assets/css/layout.css">
 </head>
 <body>
-    <a href="#wrap" class="skip blind">바로가기</a>
-    <div class="wrap" id="wrap">
-        <header class="header">
-            <div class="header-inner">
+<a href="#wrap" class="skip blind">바로가기</a>
+<div class="wrap" id="wrap">
+    <header class="header">
+        <div class="inner">
+            <h1>JSON을 활용한 테이블 그리기 v0.2</h1>
+        </div>
+    </header>
 
-                <fieldset class="field-set" data-checkbox-group="listHideCheckbox">
-                    <span class="checkbox">
-                        <input type="checkbox" id="listName" data-checkbox-single="listName">
-                        <label for="listName">name</label>
-                    </span>
-                    <span class="checkbox">
-                        <input type="checkbox" id="listUrl" data-checkbox-single="listUrl">
-                        <label for="listUrl">url</label>
-                    </span>
-                    <span class="checkbox">
-                        <input type="checkbox" id="listTel" data-checkbox-single="listTel">
-                        <label for="listTel">tel</label>
-                    </span>
-                </fieldset>
+    <main class="container">
+        <div class="content">
 
-            </div>
-        </header>
-
-        <main class="container">
-            <div class="content">
-
-                <section class="section">
-                    <fieldset class="field-set">
-                        <input type="search" placeholder="이름을 검색하세요.">
-                        <button class="">검색</button>
+            <section class="section">
+                <div class="tar">
+                    <fieldset class="field-set" data-checkbox-group="listHideCheckbox"></fieldset>
+                </div>
+                <div class="mt20 tar">
+                    <fieldset class="field-set search-field">
+                        <div class="flex-wrap">
+                            <div class="column">
+                                <span class="select-box" data-select="searchField">
+                                    <span class="view" data-select-view="searchField" data-search-select="searchField">선택</span>
+                                    <span class="drop-down" data-select-dropdown="searchField" data-options="keywords"></span>
+                                </span>
+                            </div>
+                            <div class="column">
+                                <input type="search" class="input-style bd-left" placeholder="이름을 검색하세요." data-search-input="searchField">
+                            </div>
+                        </div>
                     </fieldset>
-                    <table class="tbl-set" id="jsonTable"></table>
-                </section>
+                </div>
+                <div class="table-wrap mt20">
+                    <table class="table-col" id="jsonTable"></table>
+                </div>
+            </section>
 
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <div class="inner"></div>
-        </footer>
-    </div>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="assets/js/common.js"></script>
+    <footer class="footer">
+        <div class="inner"></div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/vendor/babel.min.js"></script>
+<script type="text/babel" src="assets/js/common.js"></script>
 </body>
 </html>
